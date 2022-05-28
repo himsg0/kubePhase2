@@ -1,0 +1,108 @@
+
+  .Mcategory{
+    min-height: 3.5vmax;
+    width: 50%;
+    padding-left: 1vw;
+    font-size: 1.5vmax;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 0.5vmax;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .footsection{
+      width: 100%;
+  }
+  
+  .logosection{
+    width: 20%;
+    display: inline-block;
+    border-right: 5px solid #ffffff;
+  }
+
+  .Mlogo{
+    width: 50%;
+    display: inline-block;
+    
+  }
+
+  .Mtext{
+      display: inline-block;
+      margin-left: 5%;
+      font-size: 2vmax;
+      vertical-align: bottom;
+      margin-bottom: 0.5;
+  }
+  
+
+  .modal{
+    background: rgba(255,255,255,0.5);
+  }
+  
+  .modal-dialog{
+    max-width: 100%!important;
+    
+    width: 100%!important;
+    margin: 0!important;
+  }
+  .modal-content{
+    background-color: rgb(40, 28, 92, 0.95);
+  }
+  
+  
+  .modal-header{
+    text-align: center;
+    border: none !important;
+    display: block!important;
+  }
+  
+  .modal-body{
+    text-align: center;
+    
+  }
+
+  .close{
+      float: right;
+      border: none;
+      background-color: rgb(40, 28, 92, 0);
+      color: #ffffff;
+      vertical-align: top;
+  }
+  .closebtn{
+    font-size: 2vmax;
+  }
+
+  .pickcity{
+    color: #ffffff;
+    font-size: 1.8vmax;
+  }
+
+  .topcities{
+    color: #ffffff;
+    font-size: 1.8vmax;
+    margin-left: -25px;
+  }
+
+  .citylogobtn{
+    width: 15%;
+    height: 6vmax;
+    border-radius: 1vmax;
+    margin-right: 2%;
+  }
+  .citylogo{
+      width: 70%;
+     
+  }
+  
+  .modal-footer{
+    text-align: center;
+    border: none !important;
+    display: block!important;
+  }
+  
+  label{
+    font-size: 2.5vmax;
+  }
+  
+  

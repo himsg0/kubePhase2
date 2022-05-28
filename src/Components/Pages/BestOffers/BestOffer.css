@@ -1,0 +1,144 @@
+.offerpagebackground .Boffersimg.inactive {
+  opacity: 0.5;
+}
+
+.offerpagebackground .Bofferheading{
+  opacity: 0.5;
+}
+
+
+.Bofferheading{
+    display: inline-block;
+    width: 50%;
+    color: #26235c;
+    font-weight: 700;
+    font-size: 4vmax;
+    margin: 0;
+    margin-top: 4.2%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    vertical-align: top;
+}
+
+.Bsortcategory{
+    display: inline-block;
+    width: 17%;
+    height: 4vmax;
+    appearance: none;
+    background-color: transparent;
+    background-image: url("https://www.kubeshop.in/wp-content/uploads/2022/05/Sort_Down.webp");
+    background-repeat: no-repeat;
+    background-size: 2.5vmax 2.5vmax;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    border: 1px solid #25255C;
+    border-radius: 15px;
+    padding-left: 0.5%;
+    margin-top: 4.2%;
+    margin-left: 2.25%;
+    font-size: 1.85vmax;
+    font-weight: 400;
+    color: #26235c;
+    vertical-align: top;
+}
+
+.BsortsubCategory{
+    display: inline-block;
+    width: 20.4%;
+    height: 4vmax;
+    appearance: none;
+    background-color: transparent;
+    background-image: url("https://www.kubeshop.in/wp-content/uploads/2022/05/Sort_Down.webp");
+    background-repeat: no-repeat;
+    background-size: 2.5vmax 2.5vmax;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    border: 1px solid #25255C;
+    border-radius: 15px;
+    padding-left: 0.5%;
+    margin-top: 4.2%;
+    margin-left: 2.25%;
+    font-size: 1.85vmax;
+    font-weight: 400;
+    color: #26235c;
+    vertical-align: top;
+}
+
+.Boffersimgsec{
+    width: 96%;
+    margin-left: 5%;
+}
+
+.Boffersimg{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 47%;
+    height: 19vmax;
+    margin-right: 1.5%;
+    margin-bottom: 3.8%;
+}
+
+  .Bofferdescrip {
+    background: rgba(37, 37, 92, 0.69);
+    border-radius: 8px;
+    position: absolute;
+    
+    width: 44.55vmax;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  }
+  
+  .Bofferdescrip.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    z-index: 1;
+  }
+  
+  .Bofferdescrip ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Bofferdescrip li {
+    text-decoration: none;
+    /* border-bottom: 1px solid #dddddd; */
+    color: #ffffff;
+    display: block;
+    font-size: 1vmax;
+    padding: 15px 20px;
+  }
+  
+  
+
+
+
+      .subcat::-webkit-scrollbar
+      {
+          width: 7px;
+      }
+      .subcat::-webkit-scrollbar-track
+      {
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+      }
+      .subcat::-webkit-scrollbar-thumb
+      {
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+          background: rgba(255,0,0,0.8);
+          -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+      }
+      .subcat::-webkit-scrollbar-thumb:window-inactive
+      {
+          background: rgba(255,0,0,0.4);
+      }
+
+
+
