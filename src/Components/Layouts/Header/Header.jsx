@@ -26,18 +26,12 @@ function Header() {
             
             <div>
                 <img className="headerlocationicon" src="https://i.imgur.com/O1XQO1e.png" alt="location icon" />
-                <select className="headercityselector" name="headercity" onClick={() => opencity()}>
-                  <option value="Greater Noida">Greater Noida</option>
-                  <option value="Noida">Noida</option>
-                  <option value="Ghaziabad">Ghaziabad</option>
-                  <option value="Bareilly">Bareilly</option>
-                </select>
-                <select className="headerlocalityselector" name="headercity">
-                  <option value="Gaur City">Gaur City</option>
-                  <option value="Govindpuram">Govindpuram</option>
-                  <option value="Kavi Nagar">Kavi Nagar</option>
-                  <option value="Raj Nagar">Raj Nagar</option>
-                </select>
+                <button className="headercityselector" name="headercity" onClick={() => opencity()}>
+                  Greater Noida
+                </button>
+                <button className="headerlocalityselector" name="headercity">
+                  Gaur City 2
+                </button>
                 <div className="headerSearchbar">
                   <img className="headersearchicon" src="https://www.kubeshop.in/wp-content/uploads/2022/05/Search.webp" alt="Search" />
                   <input class="headerSearch" type="text" placeholder="Search For Services" name="search"></input>

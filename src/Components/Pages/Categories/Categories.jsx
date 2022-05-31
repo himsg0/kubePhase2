@@ -7,6 +7,8 @@ import "./Categories.css";
 
 const Categories = () =>{
 
+    //Being Fetched from HomeAction
+
     const dispatch = useDispatch();
 
     useEffect(() => {

@@ -1,0 +1,149 @@
+.SBmainsections{
+
+}
+
+  .SBblogsection{
+    display: inline-block;
+    width: 69%;
+  }
+
+    .SBheading{
+      color: #25255c;
+      font-weight: 700;
+      font-size: 2.6vmax;
+      line-height: 2.2vmax;
+      margin: 0;
+      margin-top: 8.5%;
+      margin-left: 8%;
+    }
+
+    .SBtimestamp{
+      margin-left: 8%;
+      margin-top: 3%;
+    }
+
+      .SBplanner{
+        display: inline-block;
+        width: 4.1%;
+      }
+
+      .SBdate{
+        display: inline-block;
+        color: #25255c;
+        font-weight: 350;
+        font-size: 1.5vmax;
+        margin: 0;
+        margin-left: 3%;
+        vertical-align: top;
+      }
+
+    .SBcontentsec{
+      width: 85%;
+      color: #25255c;
+      font-weight: 400;
+      font-size: 1.85vmax;
+      line-height: 2.2vmax;
+      margin-top: 4%;
+      margin-left: 8%;
+    }
+
+      .SBimg{
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .SBcontenttext{
+        margin: 0;
+        margin-top: 4%;
+        margin-bottom: 4%;
+      }
+
+  .SBRecentBlogSec{
+    display: inline-block;
+    width: 30.5%;
+    margin-top: 11%;
+    border-left: 1px solid rgba(37, 37, 92, 0.37);
+    vertical-align: top;
+  }
+
+    .SBRecentBlogHeading{
+      color: #25255c;
+      font-size: 2.8vmax;
+      font-weight: 700;
+      margin: 0;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      text-align: center;
+    }
+
+      .SBRecentBlogCard{
+        width: 65%;
+        margin: auto;
+      }
+
+        .SBRecentBlogImg{
+          width: 100%;
+          margin-top: 8.5%;
+        }
+
+        .SBRecentBlogTitle{
+          color: #25255c;
+          font-size: 1.85vmax;
+          font-weight: 700;
+          line-height: 2.2vmax;
+          margin: 0;
+          margin-top: 8%;
+        }
+
+.SBShareSection{
+  margin-top: 8.5%;
+  margin-left: 11%;
+  margin-bottom: 5%;
+}
+
+  .SBShareHeading{
+    color: #25255c;
+    font-size: 3vmax;
+    font-weight: 700;
+    margin: 0;
+    
+  }
+
+  .SBShareButtons{
+    width: 19%;
+    margin-right: 3.5%;
+  }
+
+.SBNextBlogSec{
+  padding-top: 4%;
+  padding-left: 5.5%;
+  border-top: 1px solid rgba(37, 37, 92, 0.37);
+}  
+
+  .SBNextBlogHeading{
+    color: #25255c;
+    font-size: 3vmax;
+    font-weight: 700;
+    margin: 0;
+  }  
+
+  .SBNextBlogCard{
+    display: inline-block;
+    width: 30%;
+    margin-top: 4%;
+    margin-right: 3%;
+  }
+
+    .SBNextBlogimg{
+      width: 100%;
+      border-radius: 15px ;
+    }
+
+    .SBNextBlogTitle{
+      color: #25255c;
+      font-size: 2.2vmax;
+      font-weight: 600;
+      line-height: 2.2vmax;
+      margin: 0;
+      margin-top: 6%;
+    }

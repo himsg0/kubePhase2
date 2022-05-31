@@ -1,5 +1,6 @@
 import { SELECTED_CITY, SELECTED_LOCALITY,HEADER_SEARCH,LISTCITY_REQUEST,LISTCITY_SUCCESS,LISTCITY_FAIL,
         LISTLOCALITY_SUCCESS,LISTLOCALITY_FAIL,LISTLOCALITY_REQUEST} from "../Constants/constants"
+   
 import axios from "axios";
 
 export const selectedCity=(city)=>{
