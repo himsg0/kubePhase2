@@ -26,7 +26,7 @@ const Categories = () =>{
             <div >
             <h2 className="catheading">All Category</h2>
             {catData?.map((val) => {
-                // {     console.log("subdata", val.sub_cat)}
+                
                 return(
                 <SubCategories key={val.categories_Name} name={val.categories_Name} img={val.url} subcat={val.sub_cat}  />
                 

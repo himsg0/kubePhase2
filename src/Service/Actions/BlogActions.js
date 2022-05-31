@@ -8,9 +8,13 @@ import {
     BLOG_CAT_REQUEST,
     BLOG_CAT_SUCCESS,
 
-    SINGLEBLOG_FAIL,
-    SINGLEBLOG_REQUEST,
-    SINGLEBLOG_SUCCESS,
+    SINGLE_BLOG_FAIL,
+    SINGLE_BLOG_REQUEST,
+    SINGLE_BLOG_SUCCESS,
+
+    RELATED_BLOG_FAIL,
+    RELATED_BLOG_REQUEST,
+    RELATED_BLOG_SUCCESS,
     
     CLEAR_ERRORS
 } from "../Constants/BlogConstants";
@@ -24,10 +28,10 @@ export const getBlog = (category) => async (dispatch) => {
 
         let link = "";
         if(!category){
-            link=`http://localhost:8080/api/v1/rl7nuo0GNHFAvhTL/blog/all`;
+            link=`https://kubeshop.in:8080/api/v1/rl7nuo0GNHFAvhTL/blog/all`;
         }
         else if(category){
-            link=`http://localhost:8080/api/v1/rl7nuo0GNHFAvhTL/blog/all?category=${category}`
+            link=`https://kubeshop.in:8080/api/v1/rl7nuo0GNHFAvhTL/blog/all?category=${category}`
         }
         
         
@@ -57,7 +61,7 @@ export const getBlogcategory = () => async (dispatch) => {
     try {
         dispatch({ type: BLOG_CAT_REQUEST });
 
-        let link = "http://localhost:8080/api/v1/rl7nuo0GNHFAvhTL/blog/category";
+        let link = "https://kubeshop.in:8080/api/v1/rl7nuo0GNHFAvhTL/blog/category";
         
         
         
@@ -84,20 +88,45 @@ export const getSingleBlog = (title) => async (dispatch) => {
 
 
     try {
-        dispatch({ type: SINGLEBLOG_REQUEST });
+        dispatch({ type: SINGLE_BLOG_REQUEST });
 
-        const link=`http://localhost:8080/api/v1/rl7nuo0GNHFAvhTL/blog/all?title=${title}`;
+        const link=`https://kubeshop.in:8080/api/v1/rl7nuo0GNHFAvhTL/blog/all?slugtitle=${title}`;
         const { data } = await axios.get(link);
         
-        console.log("data on action",data)
+        console.log("datasingleblog on action",data)
         dispatch({
-            type: SINGLEBLOG_SUCCESS,
+            type: SINGLE_BLOG_SUCCESS,
             payload: data,
         })
 
     } catch (error) {
         dispatch({
-            type: SINGLEBLOG_FAIL,
+            type: SINGLE_BLOG_FAIL,
+            payload: error.response.data.message,
+        });
+
+    }
+};
+
+
+export const getRelatedBlog = (category) => async (dispatch) => {
+
+
+    try {
+        dispatch({ type: RELATED_BLOG_REQUEST });
+
+        const link=`https://kubeshop.in:8080/api/v1/rl7nuo0GNHFAvhTL/blog/all?category=${category}`;
+        const { data } = await axios.get(link);
+        
+        console.log("datarelatedblog on action",data)
+        dispatch({
+            type: RELATED_BLOG_SUCCESS,
+            payload: data,
+        })
+
+    } catch (error) {
+        dispatch({
+            type: RELATED_BLOG_FAIL,
             payload: error.response.data.message,
         });
 

@@ -7,9 +7,13 @@ import {
     BLOG_CAT_REQUEST,
     BLOG_CAT_SUCCESS,
 
-    SINGLEBLOG_FAIL,
-    SINGLEBLOG_REQUEST,
-    SINGLEBLOG_SUCCESS,
+    SINGLE_BLOG_FAIL,
+    SINGLE_BLOG_REQUEST,
+    SINGLE_BLOG_SUCCESS,
+
+    RELATED_BLOG_FAIL,
+    RELATED_BLOG_REQUEST,
+    RELATED_BLOG_SUCCESS,
     
     
     CLEAR_ERRORS
@@ -87,19 +91,54 @@ export const blogReducer =
     export const SingleBlogReducer =
     (state = { post: [] }, action) => {
         switch (action.type) {
-            case SINGLEBLOG_REQUEST:
+            case SINGLE_BLOG_REQUEST:
                 return {
                     loading: true,
                     post: [],
                 };
-            case SINGLEBLOG_SUCCESS:
+            case SINGLE_BLOG_SUCCESS:
                
                 return {
                     loading: false,
                     post: action.payload.Blogpost,
 
                 };
-            case SINGLEBLOG_FAIL:
+            case SINGLE_BLOG_FAIL:
+                return {
+                    loading: false,
+                    error: action.payload,
+                };
+
+            case CLEAR_ERRORS:
+                return {
+                    ...state,
+                    error: null,
+                };
+
+            default:
+                return state;
+
+        }
+
+    };
+
+
+    export const RelatedBlogReducer =
+    (state = { post: [] }, action) => {
+        switch (action.type) {
+            case RELATED_BLOG_REQUEST:
+                return {
+                    loading: true,
+                    post: [],
+                };
+            case RELATED_BLOG_SUCCESS:
+               
+                return {
+                    loading: false,
+                    post: action.payload.Blogpost,
+
+                };
+            case RELATED_BLOG_FAIL:
                 return {
                     loading: false,
                     error: action.payload,

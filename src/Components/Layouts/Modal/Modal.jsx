@@ -3,17 +3,6 @@ import React, {useState,useEffect} from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Modal.css';
 
-
-// const[show,popup] = useState(false);
-//   const modalopen = () => popup (true);
-//   const modalclose = () => popup (false);
-
-
-
-
-
-
-
 const City = ({show , setShow}) => {
   
   const closecity = () =>{
@@ -23,17 +12,11 @@ const City = ({show , setShow}) => {
       return (
           <div>
 
-                {/* <button type="button" class="btn btn-primary" onClick={() => setShow(true)}>
-                Launch demo modal
-                </button> */}
+                
               <div show={show} onClose={closecity} className={"modal fade" + (show ? " show d-block"  : " d-none")} tabIndex="-1" role="dialog" data-bs-backdrop="false">
                   <div className="modal-dialog" >
                       <div className="modal-content">
                           <div className="modal-header">
-                              
-                              {/* <button type="button" className="close" onClick={() => setShow(false)} >
-                                  <span>&times;</span>
-                              </button> */}
                           </div>
                           <div className="modal-body">
                             <form>

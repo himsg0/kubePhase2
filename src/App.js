@@ -16,7 +16,7 @@ function App() {
     <Header />
     <Routes>
     <Route path="/LatestBlogs" element={<LatestBlogs />}/>
-    <Route path="/LatestBlogs/SingleBlog/:title" element={<SingleBlog/>}/>
+    <Route path="/LatestBlogs/:title/*" element={<SingleBlog/>}/>
     </Routes>
     
     </BrowserRouter>

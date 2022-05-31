@@ -111,10 +111,15 @@
         color: #25255C;
         font-size: 1.8vmax;
         line-height: 2.3vmax;
+        
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
         -webkit-line-clamp: 5;
     
         -webkit-box-orient: vertical;
+    }
+
+    .Lbtext p{
+        text-align: left !important;
     }

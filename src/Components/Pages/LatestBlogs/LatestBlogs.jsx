@@ -5,7 +5,7 @@ import { useSearchParams } from "react-router-dom";
 
 import { getBlog,getBlogcategory } from '../../../Service/Actions/BlogActions';
 import SingleBlog from '../SingleBlog/SingleBlog';
-import LatestBlogCard from "./LatestBlogCard"
+import BlogCard from "./BlogCard"
 import "./LatestBlogs.css";
 
 
@@ -20,11 +20,11 @@ const LatestBlogs = () =>{
         dispatch(getBlog(blogCategory));
    }, [dispatch,blogCategory]);
   
-   const postData = useSelector(
+   const blogData = useSelector(
        (state) => state.blogReducer.post
    );
 
-   console.log("Blog Data",postData);
+   
 
    useEffect(() => {
     dispatch(getBlogcategory());
@@ -34,13 +34,7 @@ const postCatData = useSelector(
    (state) => state.blogCategoryReducer.postCat
 );
 
-console.log("Blog cat Data", postCatData);
 
-   
-   
-
-   
-   console.log("blogcat",blogCategory);
     return(
         <>
             <div>
@@ -63,11 +57,11 @@ console.log("Blog cat Data", postCatData);
                 </select>
 
 
-                { postData?.map((val) => {
-                {console.log("MYDATA",postData);}
+                { blogData?.map((val) => {
+                
                 return(
 
-                    <LatestBlogCard key={val._id} tImage={val.thumbnailImage} date={val.createdAt} title={val.title} desc={val.desc} fImage={val.featuredImage}/>
+                    <BlogCard key={val._id} tImage={val.thumbnailImage} date={val.createdAt} title={val.title} slugtitle={val.slugtitle} desc={val.desc} fImage={val.featuredImage} category={val.category}/>
                 )
                 })}
                 

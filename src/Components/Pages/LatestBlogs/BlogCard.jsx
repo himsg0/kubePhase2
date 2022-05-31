@@ -7,11 +7,10 @@ import { getBlog,getBlogcategory } from '../../../Service/Actions/BlogActions';
 import "./LatestBlogs.css";
 
 const LatestBlogCard = (props) =>{
- 
-    console.log("Mydata",props);
+
 
     return(
-        <Link to={`SingleBlog/${props.title}`}>
+        <Link to={`${props.slugtitle}?cate=${props.category}`}>
 
         <div className='LatestBlogsection' >
                     
@@ -22,7 +21,7 @@ const LatestBlogCard = (props) =>{
                             <p className='Lbdate'>{props.date}</p>
                         </div>
                         <div className='Lbheading'>{props.title}</div>
-                        <div className='Lbtext'>{props.desc}</div>
+                        <div className='Lbtext' dangerouslySetInnerHTML={{ __html: props.desc}}></div>
                     </div>
                 </div>
                 </Link>
