@@ -96,6 +96,11 @@
           line-height: 2.2vmax;
           margin: 0;
           margin-top: 8%;
+          
+        }
+
+        a:-webkit-any-link{
+          text-decoration: none!important;
         }
 
 .SBShareSection{

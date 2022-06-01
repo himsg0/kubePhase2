@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useRef} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import { Link , useParams} from "react-router-dom";
-import RecentBlogCard from './RecentBlogCard';
+import RecentBlogCard from './RelatedBlogCard';
 
 import { getBlog,getBlogcategory,getSingleBlog,getRelatedBlog } from '../../../Service/Actions/BlogActions';
 import "./SingleBlog.css";

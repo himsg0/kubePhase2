@@ -13,7 +13,7 @@ const RecentBlogCard = (props) =>{
             <div className='SBRelatedBlogCard'>
                 <img className='SBRelatedBlogImg' src={props.thumbnailImage}></img>
                 <h2 className='SBRelatedBlogTitle'>{props.title}</h2>
-        </div>
+            </div>
         </Link>  
     )
 }

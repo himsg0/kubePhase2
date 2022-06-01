@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import { getCat} from "../../../Service/Actions/HomeActions"
-import SubCategories from '../SubCategories/SubCategories';
+import SubCategories from './SubCategories';
 import "./Categories.css";
 
 
@@ -38,3 +38,4 @@ const Categories = () =>{
 }
 
 export default Categories;
+

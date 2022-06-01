@@ -24,7 +24,8 @@ const LatestBlogs = () =>{
        (state) => state.blogReducer.post
    );
 
-   
+   const [ sortedData, setSortedData ]=useState("")
+
 
    useEffect(() => {
     dispatch(getBlogcategory());
@@ -34,6 +35,33 @@ const postCatData = useSelector(
    (state) => state.blogCategoryReducer.postCat
 );
 
+console.log("Blog Data",blogData);
+
+
+
+
+ const blogDateFilter = (e) =>{ 
+     if(e.target.value=="Oldest")
+     {
+         console.log("Oldest");
+         
+          setSortedData(blogData.slice().sort((a, b) => new Date(...a.createdAt.split('/').reverse()) - new Date(...b.createdAt.split('/').reverse())));
+          
+         
+     }
+     else if(e.target.value=="Latest"){
+        console.log("Latest");
+        
+        setSortedData(blogData.slice().sort((a, b) =>  new Date(...b.createdAt.split('/').reverse()) - new Date(...a.createdAt.split('/').reverse())));
+      }
+      else if(e.target.value==""){
+        console.log("Default");
+        setSortedData(null);
+      }
+   
+ }
+
+ 
 
     return(
         <>
@@ -50,20 +78,26 @@ const postCatData = useSelector(
                         )
                     })}
                 </select>
-                <select className="LbsortsubCategory" name="sortcategory" >
-                    <option value="Greater Noida">Sort by Date</option>
-                    <option value="Greater Noida">Oldest to Latest</option>
-                    <option value="Noida">Latest to Oldest</option>
+                <select className="LbsortsubCategory" name="sortcategory" onChange={blogDateFilter} >
+                    <option value="">Sort by Date</option>
+                    <option value="Oldest">Oldest to Latest</option>
+                    <option value="Latest" >Latest to Oldest</option>
                 </select>
 
 
-                { blogData?.map((val) => {
-                
+                {sortedData? sortedData.map((val) => {
+                console.log("sorted blog data",blogData);
                 return(
 
                     <BlogCard key={val._id} tImage={val.thumbnailImage} date={val.createdAt} title={val.title} slugtitle={val.slugtitle} desc={val.desc} fImage={val.featuredImage} category={val.category}/>
                 )
-                })}
+                }) :  blogData.map((val) => {
+                    console.log("Unsorted blog data",blogData);
+                    return(
+    
+                        <BlogCard key={val._id} tImage={val.thumbnailImage} date={val.createdAt} title={val.title} slugtitle={val.slugtitle} desc={val.desc} fImage={val.featuredImage} category={val.category}/>
+                    )
+                    })}
                 
 
                 
