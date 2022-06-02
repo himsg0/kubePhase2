@@ -1,0 +1,108 @@
+.hLatestBlogSec{
+    padding-bottom: 3.75%;
+    border-bottom: 3px solid rgba(37, 37, 92, 0.15);
+}
+
+.hLatestBlogHeading{
+    color: #25255c;
+    font-size: 3.3vmax;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 3%;
+    margin-left: 5.5%;
+    margin-bottom: 3.5%;
+}
+
+    .hLatestBlogCardSubSec{
+
+    }
+
+        .hLatestBlogCard{
+           width: 95%;
+        }
+
+            .hLatestBlogImg{
+                width: 100%;
+                height: 16.39vmax;
+            }
+
+            .hLatestBlogTimeStamp{
+                display: inline-block;
+                width: 50%;
+                padding-left: 1.5%;
+                margin-top: 1%;
+            }
+
+                .hLatestBlogCalenderIcon{
+                    display: inline-block !important;
+                    width: 2.3vmax;
+                    height: 2.3vmax;
+                    vertical-align: top;
+                }
+
+                .hLatestBlogDate{
+                    display: inline-block;
+                    color: #25255C;
+                    font-size: 1.3vmax;
+                    font-weight: 350;
+                    margin: 0;
+                    margin-top: 1%;
+                    margin-left: 3%;
+                }
+
+            .hLatestBlogLikeSec{
+                display: inline-block;
+                width: 50%;
+                padding-left: 24%;
+                margin-top: 1%;
+            }
+
+                .hLatestBlogNoOfLikes{
+                    display: inline-block;
+                }
+
+                .hLatestBlogHeart{
+                    display: inline-block;
+                    width: 20%;
+                    margin-left: 1.5%;
+                }
+
+            .hLatestBlogTitle{
+                color: #25255C;
+                font-size: 2.2vmax;
+                font-weight: 600;
+                margin: 0;
+                margin-top: 1.2%;
+                margin-left: 1.5%;
+            }
+
+            .hLatestBlogText{
+                color: #25255C;
+                font-size: 1.5vmax;
+                line-height: 1.8vmax;
+                margin-top: 1%;
+                margin-left: 1.5%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+                
+            }
+
+                .hLatestBlogText p{
+                    text-align: left !important;
+                }
+
+            .hLatestBlogReadMore{
+                color: #25255C;
+                font-size: 1.5vmax;
+                line-height: 2.3vmax;
+                margin-top: 2.5%;
+                margin-left: 1.5%;
+                text-decoration: underline;
+            }
+
+.hLatestBlogCardMainSec .slick-slider {
+    margin-left: 5.5% !important;
+}

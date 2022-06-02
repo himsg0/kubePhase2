@@ -1,0 +1,123 @@
+.storeListingSec{
+    padding-bottom: 3.75%;
+    border-bottom: 3px solid rgba(37, 37, 92, 0.15);
+}
+.storeListingHeading{
+    color: #25255c;
+    font-size: 3.3vmax;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 3%;
+    margin-left: 5.5%;
+    margin-bottom: 2%;
+}
+.storeListingCard{
+    margin-top: 4.5%;
+    
+}
+    .storeListingImg{
+        width: 90%;
+        height: 16.39vmax;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+    }
+
+    .storeListingShopName{
+        color: #25255c;
+        font-size: 1.8vmax;
+        font-weight: 700;
+        margin: 0;
+        margin-top: 2.5%;
+        margin-bottom: 0.5%;
+    }
+
+    .storeListingAddress{
+        color: #25255c;
+        font-size: 1.8vmax;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .storeListingRatingReview{
+        display: flex;
+        margin-top: -0.5%;
+    }
+        
+        .sListingNoOfReviews{
+           
+            color: #25255c;
+            font-size: 1.5vmax;
+            font-weight: 400;
+            margin: 0;
+            margin-top: 2%;
+            margin-left: 0.3%;
+        }
+
+    .storeListingCallNowBtn{
+        display: flex;
+        width: 25%;
+        border: none;
+        background: transparent;
+        margin-top: 1%;
+        margin-left: 1.5%;
+        vertical-align: top;
+    }
+
+        .storeListingCallNowImg{
+            width: 100%;
+        }
+
+    .storeListingViewAllButtonSec{
+        margin-top: 3.5%;
+        text-align:  center;
+    }
+
+        .storeListingViewAllButton{
+            width: 13%;
+            height: 2.7vmax;
+            font-size: 1.9vmax;
+            font-weight: 700 ;
+            color: #ffffff;
+            background: #25255C;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+
+.slick-prev {
+    width: 50px!important;
+    height: 50px!important;
+    left: -50px;
+    top: 50% !important;
+}
+
+.slick-next {
+    width: 50px!important;
+    height: 50px!important;
+    background: #ffffff;
+    right: 25px;
+    top: 45% !important;
+    transform: scaleX(-1) !important;  
+    border-radius: 50px;
+}
+
+.slick-prev::before{
+    content: url('../../../assets/category_slider_arrow.png') !important;
+    opacity: 1 !important;
+}
+
+.slick-next:hover{
+    width: 50px!important;
+    height: 50px!important;
+    background: #ffffff;
+    border-radius: 50px;  
+}
+        
+.slick-next:before{
+    content: url('../../../assets/category_slider_arrow.png') !important;
+    opacity: 1 !important;
+}        
+
+.storeListingCardSec .slick-slider {
+    margin-left: 5.5% !important;
+}
+

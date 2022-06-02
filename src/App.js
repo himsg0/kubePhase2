@@ -6,6 +6,7 @@ import Categories from "./Components/Pages/Categories/Categories"
 import BestOffers from "./Components/Pages/BestOffers/BestOffer"
 import LatestBlogs from "./Components/Pages/LatestBlogs/LatestBlogs";
 import SingleBlog from "./Components/Pages/SingleBlog/SingleBlog"
+import Home from "./Components/Pages/Home/Home";
 
 import {BrowserRouter as Router, Routes, Route, useRoutes} from 'react-router-dom';
 import {BrowserRouter} from 'react-router-dom';
@@ -15,6 +16,7 @@ function App() {
     <BrowserRouter>
     <Header />
     <Routes>
+    <Route path="/" element={<Home />}/>
     <Route path="/BestOffers" element={<BestOffers />}/>
     <Route path="/Categories" element={<Categories />}/>
     <Route path="/LatestBlogs" element={<LatestBlogs />}/>
