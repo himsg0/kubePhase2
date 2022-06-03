@@ -1,0 +1,126 @@
+.hCategorySec{
+    padding-bottom: 2%;
+    border-bottom: 3px solid rgba(37, 37, 92, 0.15);
+}
+
+.hCategoryHeading{
+    color: #25255c;
+    font-size: 3.3vmax;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 3%;
+    margin-left: 5.5%;
+    margin-bottom: 2%;
+}
+
+.Hcategory-content{
+    height: 100%;
+    width: 88%;
+    margin-left: 4.5vmax;
+    margin-top: 5.5vmax;
+  }
+  
+  .Hcategory{
+    width:90%;
+    height: 12vmax;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+    .homeCategoryImg{
+        width: 61%;
+        margin-left: 2vmax;
+    }
+
+    .hCategoryName{
+        color: #25255C;
+        font-size: 1.2vmax;
+        font-weight: 600;
+        margin-top: 10%;
+    }
+  
+  .uselesscategory{
+    display: none !important;
+  }
+
+  .Hcategory-content .slick-prev {
+    width: 70px!important;
+    height: 70px!important;
+    left: -170px;
+    top: 45% !important;
+    }
+
+    .Hcategory-content .slick-next {
+    width: 50px!important;
+    height: 50px!important;
+    right: -40px;
+    top: 38% !important;
+    transform: scaleX(-1) !important;  
+    border-radius: 50px;
+    }
+
+    .Hcategory-content .slick-prev::before{
+    content: url('../../../assets/category_slider_arrow.png') !important;
+    opacity: 1 !important;
+    }
+
+    .Hcategory-content .slick-next:before{
+    content: url('../../../assets/category_slider_arrow.png') !important;
+    opacity: 1 !important;
+    }        
+
+
+  .Hcategory-content .slick-slider{
+    margin-left: 15% !important;
+    padding-left: 0 !important;
+    padding-right: 10% !important;
+  }
+  
+
+@media only screen and (max-width: 600px) and (min-width: 320px){
+    .category-content{
+        height:100%;
+        width:90%;
+        margin-left: 1.5vmax;
+        margin-top: 4vmax;
+        
+      }
+      
+      .Hcategory{
+        width:100%;
+        height: 10vmax;
+        text-align: center;
+      }
+      
+      .slick-slide img {
+        display: initial;
+      }
+      .slick-prev {
+        left: -18px;
+      }
+      .slick-prev::before{
+        color: #000000;
+        font-size: 2vmax;
+        line-height: 0!important;
+      }
+      
+      .slick-next {
+        right: -18px;
+      }
+
+      .slick-next::before{
+        color: #000000;
+        font-size: 2vmax;
+        line-height: 0!important;
+      }
+      .category-section{
+        margin-top: 5vmax;
+     }
+    
+      .Hcategory img{
+        width:50%;
+     }
+      .Hcategory h4{
+          font-size: 1.1vmax;
+      }
+}

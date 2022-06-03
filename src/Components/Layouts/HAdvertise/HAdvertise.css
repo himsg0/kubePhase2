@@ -1,0 +1,70 @@
+.hAdvertiseSec{
+    padding-bottom: 1.5%;
+    border-bottom: 3px solid rgba(37, 37, 92, 0.15);
+}
+
+.hAdvertiseCardSec{
+margin-top: 1.5%;
+}
+
+.hAdvertiseImgSec{
+    
+}
+
+    .hAdvertiseImg{
+       width: 96%;
+       height: 19.6vmax;
+       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+       border-radius: 15px;
+    }
+
+    .hAdvertiseCardSec .slick-prev {
+        width: 50px!important;
+        height: 50px!important;
+        background: #ffffff;
+        left: 20px;
+        top: 50% !important;
+        border-radius: 50px;
+        z-index: 1;
+    }
+
+    .hAdvertiseCardSec .slick-prev:hover{
+        width: 50px!important;
+        height: 50px!important;
+        background: #ffffff;
+        border-radius: 50px;  
+    }
+    
+    .hAdvertiseCardSec .slick-next {
+        width: 50px!important;
+        height: 50px!important;
+        background: #ffffff;
+        right: 25px;
+        top: 45% !important;
+        transform: scaleX(-1) !important;  
+        border-radius: 50px;
+    }
+
+    .hAdvertiseCardSec .slick-next:hover{
+        width: 50px!important;
+        height: 50px!important;
+        background: #ffffff;
+        border-radius: 50px;  
+    }
+    
+    .hAdvertiseCardSec .slick-prev::before{
+        content: url('../../../assets/category_slider_arrow.png') !important;
+        opacity: 1 !important;
+    }
+    
+    
+            
+    .hAdvertiseCardSec .slick-next::before{
+        content: url('../../../assets/category_slider_arrow.png') !important;
+        opacity: 1 !important;
+    }
+
+
+/* .hAdvertiseCardSec .slick-slider {
+    margin-left: 5.5% !important;
+} */

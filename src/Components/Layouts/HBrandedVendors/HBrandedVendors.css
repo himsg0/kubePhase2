@@ -1,0 +1,45 @@
+.hBrandedVendorsSec{
+    padding-bottom: 3.75%;
+    border-bottom: 3px solid rgba(37, 37, 92, 0.15);
+}
+.hBrandedVendorsHeading{
+    color: #25255c;
+    font-size: 3.3vmax;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 3%;
+    margin-left: 5.5%;
+    margin-bottom: 3.5%;
+}
+
+.hBrandedVendorsImgSec{
+    
+}
+
+    .hBrandedVendorsImg{
+       width: 85%;
+       height: 17.7vmax;
+       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+       border-radius: 15px;
+    }
+
+.hBrandedVendorsViewAllButtonSec{
+    margin-top: 3.5%;
+    text-align:  center;
+}   
+
+.hBrandedVendorsViewAllButton{
+        width: 13%;
+        height: 2.7vmax;
+        font-size: 1.9vmax;
+        font-weight: 700 ;
+        color: #ffffff;
+        background: #25255C;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+}
+
+
+.hBrandedVendorsCardSec .slick-slider {
+    margin-left: 5.5% !important;
+}

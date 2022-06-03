@@ -1,6 +1,6 @@
 .hLatestBlogSec{
     padding-bottom: 3.75%;
-    border-bottom: 3px solid rgba(37, 37, 92, 0.15);
+    
 }
 
 .hLatestBlogHeading{
@@ -14,16 +14,22 @@
 }
 
     .hLatestBlogCardSubSec{
-
+        height: 36vmax;
     }
 
         .hLatestBlogCard{
            width: 95%;
+           height: 95%;
+           margin-top: 2%;
+           margin-left: 1%;
+           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) , -2px -2px 5px rgba(0, 0, 0, 0.5);
+           
+           border-radius: 15px;
         }
 
             .hLatestBlogImg{
                 width: 100%;
-                height: 16.39vmax;
+                height: 15.5vmax;
             }
 
             .hLatestBlogTimeStamp{
@@ -35,15 +41,15 @@
 
                 .hLatestBlogCalenderIcon{
                     display: inline-block !important;
-                    width: 2.3vmax;
-                    height: 2.3vmax;
+                    width: 2.1vmax;
+                    height: 2.1vmax;
                     vertical-align: top;
                 }
 
                 .hLatestBlogDate{
                     display: inline-block;
                     color: #25255C;
-                    font-size: 1.3vmax;
+                    font-size: 1.2vmax;
                     font-weight: 350;
                     margin: 0;
                     margin-top: 1%;
@@ -53,12 +59,13 @@
             .hLatestBlogLikeSec{
                 display: inline-block;
                 width: 50%;
-                padding-left: 24%;
+                padding-left: 20%;
                 margin-top: 1%;
             }
 
                 .hLatestBlogNoOfLikes{
                     display: inline-block;
+                    font-size: 1.2vmax;
                 }
 
                 .hLatestBlogHeart{
@@ -69,7 +76,7 @@
 
             .hLatestBlogTitle{
                 color: #25255C;
-                font-size: 2.2vmax;
+                font-size: 1.8vmax;
                 font-weight: 600;
                 margin: 0;
                 margin-top: 1.2%;
@@ -78,8 +85,8 @@
 
             .hLatestBlogText{
                 color: #25255C;
-                font-size: 1.5vmax;
-                line-height: 1.8vmax;
+                font-size: 1.2vmax;
+                line-height: 1.6vmax;
                 margin-top: 1%;
                 margin-left: 1.5%;
                 overflow: hidden;
@@ -96,11 +103,27 @@
 
             .hLatestBlogReadMore{
                 color: #25255C;
-                font-size: 1.5vmax;
+                font-size: 1.2vmax;
                 line-height: 2.3vmax;
                 margin-top: 2.5%;
                 margin-left: 1.5%;
                 text-decoration: underline;
+            }
+
+        .hLatestBlogViewAllButtonSec{
+            margin-top: 3.5%;
+            text-align:  center;
+        }
+
+            .hLatestBlogViewAllButton{
+                width: 13%;
+                height: 2.7vmax;
+                font-size: 1.9vmax;
+                font-weight: 700 ;
+                color: #ffffff;
+                background: #25255C;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
             }
 
 .hLatestBlogCardMainSec .slick-slider {
