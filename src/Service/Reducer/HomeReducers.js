@@ -9,6 +9,15 @@ import {
     DAY_OFFER_FAIL,
     DAY_OFFER_REQUEST,
     DAY_OFFER_SUCCESS,
+    HOME_STORE_FAIL,
+    HOME_STORE_REQUEST,
+    HOME_STORE_SUCCESS,
+    HOME_NEWSTORE_FAIL,
+    HOME_NEWSTORE_REQUEST,
+    HOME_NEWSTORE_SUCCESS,
+    HBLOG_FAIL,
+    HBLOG_REQUEST,
+    HBLOG_SUCCESS
 } from "../Constants/HomeConstant";
 
 //Locality Banner Fetching
@@ -114,3 +123,113 @@ export const offerReducer =
         }
 
     };
+
+// Home Store Reducers
+
+export const storeHReducer =
+    (state = { stores: [] }, action) => {
+        switch (action.type) {
+            case HOME_STORE_REQUEST:
+                return {
+                    loading: true,
+                    stores: [],
+                };
+            case HOME_STORE_SUCCESS:
+                return {
+                    loading: false,
+                    stores: action.payload.products,
+
+                };
+            case HOME_STORE_FAIL:
+                return {
+                    loading: false,
+                    error: action.payload,
+                };
+
+            case CLEAR_ERROR:
+                return {
+                    ...state,
+                    error: null,
+                };
+
+            default:
+                return state;
+
+        }
+
+    };
+
+
+  // New Listing Reducers
+  
+  // Home NewStore Reducers
+
+export const storeHNewReducer =
+(state = { newstores: [] }, action) => {
+    switch (action.type) {
+        case HOME_NEWSTORE_REQUEST:
+            return {
+                loading: true,
+                newstores: [],
+            };
+        case HOME_NEWSTORE_SUCCESS:
+            return {
+                loading: false,
+                newstores: action.payload.brandStore,
+
+            };
+        case HOME_NEWSTORE_FAIL:
+            return {
+                loading: false,
+                error: action.payload,
+            };
+
+        case CLEAR_ERROR:
+            return {
+                ...state,
+                error: null,
+            };
+
+        default:
+            return state;
+
+    }
+
+};
+
+// Home Blog Reducers
+
+export const blogHReducer =
+    (state = { post: [] }, action) => {
+        switch (action.type) {
+            case HBLOG_REQUEST:
+                return {
+                    loading: true,
+                    post: [],
+                };
+            case HBLOG_SUCCESS:
+               
+                return {
+                    loading: false,
+                    post: action.payload.Blogpost,
+
+                };
+            case HBLOG_FAIL:
+                return {
+                    loading: false,
+                    error: action.payload,
+                };
+
+            case CLEAR_ERROR:
+                return {
+                    ...state,
+                    error: null,
+                };
+
+            default:
+                return state;
+
+        }
+
+    };
+

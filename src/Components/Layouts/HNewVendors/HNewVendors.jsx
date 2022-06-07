@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useEffect, useState, useRef} from 'react';
+import {useSelector, useDispatch} from 'react-redux';
 import Slider from "react-slick";
+import { getHNewStore } from '../../../Service/Actions/HomeActions';
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,6 +16,23 @@ const HNewVendors =() =>{
         slidesToShow: 5.25,
         slidesToScroll: 1
       };
+
+      const dispatch = useDispatch();
+    
+    useEffect(() => {
+        dispatch(getHNewStore());
+   }, [dispatch,]);
+  
+   const storeNewData = useSelector(
+       (state) => state.storeHNewReducer.newstores
+   );
+
+   console.log("storeNewDatawhy do you",storeNewData);
+
+   const unique = [...new Map(storeNewData?.map((val) => [val['storename'], val])).values() ];
+   // unique contains the distinct brand store
+
+   console.log('filteredData',unique)
 
     return(
         <>

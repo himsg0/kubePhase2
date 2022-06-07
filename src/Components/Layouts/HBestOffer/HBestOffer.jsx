@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useEffect, useState, useRef} from 'react';
+import {useSelector, useDispatch} from 'react-redux';
 import Slider from "react-slick";
+import { getOffer } from '../../../Service/Actions/HomeActions';
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,6 +16,18 @@ const HBestOffer =() =>{
         slidesToShow: 2.2,
         slidesToScroll: 1
       };
+
+      const dispatch = useDispatch();
+    
+    useEffect(() => {
+        dispatch(getOffer("Noida"));
+   }, [dispatch,]);
+  
+   const offerData = useSelector(
+       (state) => state.offerReducer.offers
+   );
+
+   console.log("OfferData",offerData);
 
     return(
         <>

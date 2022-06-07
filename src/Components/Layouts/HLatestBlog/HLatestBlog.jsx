@@ -1,10 +1,12 @@
-import React, {useEffect, useState, useRef} from "react";
+import React, {useEffect, useState, useRef} from 'react';
+import {useSelector, useDispatch} from 'react-redux';
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Heart from "react-heart"
 import './HLatestBlog.css'
+import { getHBlog } from '../../../Service/Actions/HomeActions';
 
 const HLatestBlog =() =>{
     const LBsettings = {
@@ -14,6 +16,18 @@ const HLatestBlog =() =>{
         slidesToShow: 3.5,
         slidesToScroll: 1
       };
+
+      const dispatch = useDispatch();
+    
+    useEffect(() => {
+        dispatch(getHBlog());
+   }, [dispatch]);
+  
+   const blogData = useSelector(
+       (state) => state.blogHReducer.post
+   );
+
+   console.log("blogData",blogData); 
 
       const [activeHeart, setActiveHeart] = useState(false)
       return(

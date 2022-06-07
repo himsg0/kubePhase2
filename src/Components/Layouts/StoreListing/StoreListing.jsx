@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useEffect, useState, useRef} from 'react';
+import {useSelector, useDispatch} from 'react-redux';
 import Slider from "react-slick";
+import { getHStore } from '../../../Service/Actions/HomeActions';
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -23,6 +25,20 @@ const StoreListing =() =>{
         
     };  
 
+    const dispatch = useDispatch();
+    
+    useEffect(() => {
+        dispatch(getHStore("Noida"));
+   }, [dispatch,]);
+  
+   const storeData = useSelector(
+       (state) => state.storeHReducer.stores
+   );
+
+   console.log("Home storeData",storeData);
+
+   
+
     return(
         <>
         <div className="storeListingSec">
@@ -30,7 +46,7 @@ const StoreListing =() =>{
             <div className="storeListingCardSec">
             <Slider {...SLsettings}>
             <div className="storeListingCard">
-                <img className="storeListingImg" src="https://www.kubeshop.in/wp-content/uploads/2022/06/Planup-Decor1-_1_.webp"></img>
+                <img className="storeListingImg" src="https://i.ibb.co/tKgp5gn/Artboard-1.png"></img>
                 <h2 className="storeListingShopName">Planup Decor</h2>
                 <p className="storeListingAddress">Gaur City,Noida</p>
                 <div className="storeListingRatingReview">
@@ -42,7 +58,7 @@ const StoreListing =() =>{
                 </div>
             </div>
             <div className="storeListingCard">
-                <img className="storeListingImg" src="https://www.kubeshop.in/wp-content/uploads/2022/06/Planup-Decor1-_1_.webp"></img>
+                <img className="storeListingImg" src="https://i.ibb.co/tKgp5gn/Artboard-1.png"></img>
                 <h2 className="storeListingShopName">Planup Decor</h2>
                 <p className="storeListingAddress">Gaur City,Noida</p>
                 <div className="storeListingRatingReview">
@@ -54,7 +70,7 @@ const StoreListing =() =>{
                 </div>
             </div>
             <div className="storeListingCard">
-                <img className="storeListingImg" src="https://www.kubeshop.in/wp-content/uploads/2022/06/Planup-Decor1-_1_.webp"></img>
+                <img className="storeListingImg" src="https://i.ibb.co/tKgp5gn/Artboard-1.png"></img>
                 <h2 className="storeListingShopName">Planup Decor</h2>
                 <p className="storeListingAddress">Gaur City,Noida</p>
                 <div className="storeListingRatingReview">
